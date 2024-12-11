@@ -1,0 +1,111 @@
+.contacts_block{
+  padding: 40px 0px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20px 3fr 20px;
+  
+  gap: 20px;
+  background: aliceblue;
+}
+.contacts_block iframe{
+  grid-column: 1/4;
+  width: 100%;
+}
+.contacts_block h2{
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-transform: uppercase;
+  color: var(--color-060606);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+}
+.contacts_box{
+  width: 100%;
+  padding: 0px 10px;
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.contacts_img_studio{
+  justify-self: center;
+  min-height: 150px;
+  width: 100%;
+  padding: 5px;
+}
+.contacts_img_studio img{
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.contacts_phones{
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  align-self: center;
+}
+
+.contacts_phones li a{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-3d3d3d);
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  transition: all 0.6s;
+}
+.contacts_phones li a img{
+  width: 25px;
+  height: 25px;
+}
+.contacts_phones li a:hover{
+  text-decoration: underline;
+  transition: all 0.6s;
+}
+
+.contacts_phones-head{
+  color: var(--color-060606);
+  font-weight: 600;
+}
+@media (max-width: 1100px){
+  .contacts_block h2{
+   font-size: 40px;
+  }
+}
+@media (max-width: 860px){
+  .contacts_block h2{
+   font-size: 34px;
+  }
+}
+@media (max-width: 640px){
+  .contacts_block h2{
+   font-size: 30px;
+  }
+}
+@media (max-width: 510px){
+  .contacts_block h2{
+   font-size: 24px;
+  }
+  .contacts_box{
+   flex-direction: column;
+  }
+  .contacts_phones{
+   justify-content: center;
+  }
+  .contacts_phones li h3{
+    text-align: center;
+  }
+}

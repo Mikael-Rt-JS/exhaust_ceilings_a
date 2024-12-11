@@ -1,2 +1,3 @@
-# exhaust_ceilings_a
-Студия натяжных потолков
+# stretch_ceiling
+Stretch ceiling specialist
+Мастер по вытяжным потолкам

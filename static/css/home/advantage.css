@@ -1,0 +1,104 @@
+.advantage_block{
+    padding: 40px 0px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 20px 3fr 20px;
+  
+  gap: 20px;
+  background: aliceblue;
+}
+.advantage_block h2{
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-transform: uppercase;
+  color: var(--color-060606);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+}
+.advantage_block h3{
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  color: var(--color-060606);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.advantage_cards{
+    grid-column: 1/4;
+    grid-row: 3/5;
+    width: 100%;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.advantage_card h3{
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.advantage_card{
+    max-width: 33.333%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advantage_card img{
+    justify-self: center;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1100px){
+  .advantage_block h2{
+   font-size: 40px;
+  }
+  .advantage_block h3{
+   font-size: 28px;
+  }
+}
+@media (max-width: 860px){
+  .advantage_block h2{
+   font-size: 34px;
+  }
+  .advantage_block h3{
+   font-size: 26px;
+  }
+  .advantage_cards{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 640px){
+  .advantage_block h2{
+   font-size: 30px;
+  }
+  .advantage_cards{
+    flex-direction: column;
+      align-items: center;
+  }
+  .advantage_card{
+      width: 100%;
+     text-align: center;
+  }
+  .advantage_block h3{
+   font-size: 22px;
+  }
+}
+@media (max-width: 510px){
+  .advantage_block h2{
+   font-size: 24px;
+  }
+  .advantage_block h3{
+   font-size: 18px;
+  }
+}
